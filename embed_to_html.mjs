@@ -9,10 +9,11 @@ const QUOTE_FACTOR = 1
 const REPLY_FACTOR = 2
 const base_url = 'https://twitter.com/twitter/status'
 const client = new Client(secrets.bearerToken);
-const data = []
 const DAY_IN_MS = 24 * 3600 * 1000;
 const HEADER = '<html><title>IndiAves</title><body>'
 const FOOTER = '</body></head>'
+
+let data = [];
 
 async function enrichData() {
     const inputFile = fs.readFileSync('tweets.txt');
@@ -23,10 +24,9 @@ async function enrichData() {
     const lines = inputFile.toString().replace(/^undefined\n/gm, '').trim().split('\n').map((item) => {
         return JSON.parse(item)
     })
-    for (const item of jsonData) {
-        if (Date.now() - item['created_at'] > 3 * DAY_IN_MS) {
-            processedIdsSet.add(item.id)
-            data.push(item)
+    for (const key in jsonData) {
+        if (Date.now() - new Date(jsonData[key]['created_at']) > 3 * DAY_IN_MS) {
+            processedIdsSet.add(jsonData[key].id)
         }
     }
     for (const line of lines) {
@@ -53,10 +53,11 @@ async function enrichData() {
             const metrics = item.public_metrics
             item.score = metrics.like_count * LIKE_FACTOR + metrics.quote_count * QUOTE_FACTOR +
                 metrics.reply_count * REPLY_FACTOR + metrics.retweet_count * RETWEET_FACTOR
+            jsonData[item.id] = item
         })
-        data.push(...tweets.data);
     }
-    fs.writeFileSync('tweets.json', JSON.stringify(data, null, 2))
+    data = Object.values(jsonData)
+    fs.writeFileSync('tweets.json', JSON.stringify(jsonData, null, 2))
 }
 
 export async function createHTML(search_term, time, items = 10) {
