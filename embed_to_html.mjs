@@ -2,11 +2,9 @@ import { Client } from 'twitter-api-sdk';
 import * as fs from 'fs';
 import secrets from './other_secrets.json' assert { type: 'json' };
 import got from 'got';
+import { expandDocument } from './tweet_tagger.mjs';
 
-const LIKE_FACTOR = 0.15
-const RETWEET_FACTOR = 1
-const QUOTE_FACTOR = 1
-const REPLY_FACTOR = 2
+
 const base_url = 'https://twitter.com/twitter/status'
 const client = new Client(secrets.bearerToken);
 const DAY_IN_MS = 24 * 3600 * 1000;
@@ -18,7 +16,14 @@ let data = [];
 async function enrichData() {
     const inputFile = fs.readFileSync('tweets.txt');
     const jsonFile = fs.readFileSync('tweets.json');
-    const jsonData = JSON.parse(jsonFile.toString())
+    const jsonData = JSON.parse(jsonFile.toString());
+
+    let docno = Number.MIN_SAFE_INTEGER;
+    Object.values(jsonData).forEach(item => {
+        docno = Math.max(docno, item.docno);
+    })
+    docno += 1;
+
     const idsSet = new Set()
     const processedIdsSet = new Set()
     const lines = inputFile.toString().replace(/^undefined\n/gm, '').trim().split('\n').map((item) => {
@@ -50,14 +55,15 @@ async function enrichData() {
             "tweet.fields": ["public_metrics", "created_at"]
         });
         tweets.data.forEach(item => {
-            const metrics = item.public_metrics
-            item.score = metrics.like_count * LIKE_FACTOR + metrics.quote_count * QUOTE_FACTOR +
-                metrics.reply_count * REPLY_FACTOR + metrics.retweet_count * RETWEET_FACTOR
-            jsonData[item.id] = item
+            const doc = expandDocument(item, docno)
+            if (doc){
+                jsonData[item.id] = doc
+                docno+=1
+            }
         })
     }
     data = Object.values(jsonData)
-    fs.writeFileSync('tweets.json', JSON.stringify(jsonData, null, 2))
+    fs.writeFile('tweets.json', JSON.stringify(jsonData, null, 2))
 }
 
 export async function createHTML(search_term, time, items = 10) {
@@ -72,7 +78,7 @@ export async function createHTML(search_term, time, items = 10) {
     }
     const filteredData = data.filter((item) => {
         return Date.now() - new Date(item.created_at).getTime() < time * DAY_IN_MS
-    }).filter((item)=>{
+    }).filter((item) => {
         return item.text.toLowerCase().includes(search_term)
     }).sort((item1, item2) => (item1.score - item2.score)).reverse()
     for (const item of filteredData.slice(0, items)) {
