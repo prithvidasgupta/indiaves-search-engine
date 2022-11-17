@@ -53,4 +53,4 @@ res = pt.Experiment([cm, bm25, tfidf],
                     names=['naive','bm25','tfidf'],
                     baseline=0)
 
-print(res)
+res.to_csv('experiment_1.csv')
