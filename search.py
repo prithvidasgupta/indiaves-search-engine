@@ -1,6 +1,7 @@
 import pyterrier as pt
 import json
 import pandas as pd
+import math
 
 
 def load_data():
@@ -14,6 +15,14 @@ def create_map(data):
     for (key, value) in data.items():
         map[str(value['docno'])] = key
     return map
+
+def bm25_tuning_helper(k1=1.2,k3=8,b=0.25):
+    def bm25_weighting_tuned(keyFreq, posting, entryStats, collStats):
+        normal_qtf = (k3+1)*keyFreq/(k3 + keyFreq)
+        normal_tf = (k1+1)*posting.getFrequency()/((k1*(1-b+(b*posting.getDocumentLength()/collStats.averageDocumentLength)))+posting.getFrequency())
+        normal_idf = math.log((collStats.numberOfDocuments-entryStats.getDocumentFrequency()+0.5)/(entryStats.getDocumentFrequency()+0.5))
+        return normal_idf*normal_tf*normal_qtf
+    return bm25_weighting_tuned
 
 
 data = load_data()
@@ -36,21 +45,22 @@ index = pt.IndexFactory.of(index_ref)
 
 bm25 = pt.BatchRetrieve(index, wmodel='BM25')
 
-bm25 = bm25.parallel(2)
-
 cm = pt.BatchRetrieve(index, wmodel='CoordinateMatch')
-
-cm = cm.parallel(2)
 
 tfidf = pt.BatchRetrieve(index, wmodel='TF_IDF')
 
-tfidf = tfidf.parallel(2)
+tuned_bm25 = pt.BatchRetrieve(index, wmodel=bm25_tuning_helper(1.2,8,0.25))
 
-res = pt.Experiment([cm, bm25, tfidf],
+res = pt.Experiment([cm, bm25, tfidf, tuned_bm25],
                     topics_df,
                     qrel_df,
                     eval_metrics=["map", "ndcg"],
-                    names=['naive','bm25','tfidf'],
+                    names=['naive','bm25','tfidf', 'tuned_bm25'],
                     baseline=0)
 
 res.to_csv('experiment_1.csv')
+
+print(res)
+
+
+
