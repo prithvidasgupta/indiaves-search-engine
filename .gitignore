@@ -3,3 +3,4 @@ tweets.*
 node_modules/*
 node_modules
 *.csv
+*_index/
