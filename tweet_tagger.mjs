@@ -2,7 +2,7 @@ import tags from './tag.json' assert { type: 'json' };
 import { speciesInfo } from './species_gen.mjs';
 import fs from 'fs';
 
-const stopwordsList = fs.readFileSync('./stopwords.txt')
+const stopwordsList = fs.readFileSync('./etc/stopword-list.txt')
 const LIKE_FACTOR = 0.15
 const RETWEET_FACTOR = 1
 const QUOTE_FACTOR = 1
