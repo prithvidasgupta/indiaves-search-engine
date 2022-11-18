@@ -9,10 +9,7 @@ async function main() {
     await client.tweets.addOrDeleteRules({
         add: [{
             value: '(#IndiAves) AND (-is:retweet)'
-        }],
-        delete: {
-            ids: ['1584215699479633920', '1584514300290338816']
-        }
+        }]
     })
     console.log(await client.tweets.getRules());
     const stream = client.tweets.searchStream({
