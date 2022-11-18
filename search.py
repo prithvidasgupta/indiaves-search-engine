@@ -98,8 +98,12 @@ tuned_bm25 = pt.BatchRetrieve(index, wmodel=bm25_tuning_helper(1.2,8,0.25))
 
 @app.route("/search/<term>")
 def search(term):
+    print(term)
     search_result = tuned_bm25.search(term)
     result=[]
     for item in search_result['docno']:
         result.append(data[docno_to_tweet_map[item]]['id'])
     return result
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True)
