@@ -67,7 +67,7 @@ async function enrichData() {
     fs.writeFile('tweets.json', JSON.stringify(jsonData, null, 2),()=>{})
 }
 
-export async function createHTML(v2 = false, search_term, time, items = 10) {
+export async function createHTML(v2 = false, search_term, dayFrom, dayTo, items = 10) {
     if (!items || items <= 0 || items > 25) {
         items = 10
     }
@@ -77,22 +77,24 @@ export async function createHTML(v2 = false, search_term, time, items = 10) {
         await enrichData();
         setInterval(enrichData, DAY_IN_MS / 4)
     }
+    let dayFrom_ms = Date.parse(dayFrom)
+    let dayTo_ms = Date.parse(dayTo)
     let filteredData = [];
     if (v2) {
-        const searched_ids = await got.get(`http://34.71.21.96:5000/search/${search_term}`).json()
+        const searched_ids = await got.get(`http://127.0.0.1:5000/search/${search_term}/count/${items}`).json()
         for (const key of searched_ids) {
-            if (Date.now() - new Date(dataMap[key].created_at).getTime() < time * DAY_IN_MS)
+            if (dayFrom_ms <= new Date(dataMap[key].created_at).getTime() && dayTo_ms >=  new Date(dataMap[key].created_at).getTime())
                 filteredData.push(dataMap[key])
         }
     }
     else {
         filteredData = data.filter((item) => {
-            return Date.now() - new Date(item.created_at).getTime() < time * DAY_IN_MS
+            return dayFrom_ms <= new Date(item.created_at).getTime() && dayTo_ms >=  new Date(item.created_at).getTime()
         }).filter((item) => {
             return item.text.toLowerCase().includes(search_term)
         })
+        filteredData = filteredData.sort((item1, item2) => (item1.score - item2.score)).reverse()
     }
-    filteredData = filteredData.sort((item1, item2) => (item1.score - item2.score)).reverse()
     for (const item of filteredData.slice(0, items)) {
         requests.push(got.get(`https://publish.twitter.com/oembed?url=${base_url}/${item.id}`).json())
     }
