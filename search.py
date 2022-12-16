@@ -6,6 +6,7 @@ from thefuzz import process
 import math as Math
 from flask import Flask
 import traceback
+import datetime
 
 app = Flask(__name__)
 
@@ -39,6 +40,7 @@ def expand_query(query):
     # print(expansion_key)
     if (expansion_key[1] >= 80):
         return query + " " + " ".join(thesaurus[expansion_key[0]])
+    print(query)
     return query
 
 
@@ -84,9 +86,10 @@ def bm25_tuning_helper(k1=1.2, k3=8, b=0.25):
 def enrich_text2(arr):
     res = list()
     for item in arr:
-        item['text'] = item['text'].replace('#', ' ').replace('@', ' ').lower()
+        item['text'] = item['text'].replace('#', ' ').replace('@', ' ').replace(u'\u201c', '"').replace(u'\u201d', '"').replace(u'\u2018', '\'').replace(u'\u2019', '\'').lower()
         item['classifier_text'] = ' '.join(item['classifiers'])
         item['retweet_score'] = item['score']
+        item['created_at'] = item['created_at'].split('T')[0]
         res.append(item)
     return res
 
@@ -110,7 +113,7 @@ if not pt.started():
 #     "./test_index1", overwrite=True, meta={'docno': 10}).index(enriched_data1, fields=('docno', 'text'))
 
 index_ref2 = pt.IterDictIndexer(
-    "./test_index2", overwrite=True, meta={'docno': 10, 'retweet_score': 10, 'classifier_text': 200,'created_at':15}).index(enriched_data2, fields=('docno', 'text', 'retweet_score', 'classifier_text','created_at'))
+    "./test_index2", overwrite=False, meta={'docno': 10, 'retweet_score': 10, 'classifier_text': 200,'created_at':15}).index(enriched_data2, fields=('docno', 'text', 'retweet_score', 'classifier_text','created_at'))
 
 
 # # index with no classifier
@@ -137,21 +140,21 @@ def retweet_score_rerank(row):
 tuned_bm25_with_qe = pt.apply.query(
     lambda q: expand_query(q['query'])) >> tuned_bm25_2
 
-# tuned_bm25_with_qe_classifier_search_tfidf_retweet_rerank = (tuned_bm25_with_qe >>
-#                                                              pt.text.get_text(index_ref2, ["retweet_score", "classifier_text"]) >>
-#                                                              (pt.transformer.IdentityTransformer() **
-#                                                               pt.text.scorer(
-#                                                                  body_attr='classifier_text', wmodel='TF_IDF')
-#                                                               ) >>
-#                                                              pt.apply.doc_score(retweet_score_rerank))
+tuned_bm25_with_qe_classifier_search_tfidf_retweet_rerank = (tuned_bm25_with_qe >>
+                                                             pt.text.get_text(index_ref2, ["retweet_score", "classifier_text", "created_at"]) >>
+                                                             (pt.transformer.IdentityTransformer() **
+                                                              pt.text.scorer(
+                                                                 body_attr='classifier_text', wmodel='TF_IDF')
+                                                              ) >>
+                                                             pt.apply.doc_score(retweet_score_rerank))
 
-tuned_bm25_with_qe_classifier_search_bm25_retweet_rerank = (tuned_bm25_with_qe >>
-                                                            pt.text.get_text(index_ref2, ["retweet_score", "classifier_text"]) >>
-                                                            (pt.transformer.IdentityTransformer() **
-                                                             pt.text.scorer(
-                                                                body_attr='classifier_text', wmodel='BM25')
-                                                             ) >>
-                                                            pt.apply.doc_score(retweet_score_rerank))
+# tuned_bm25_with_qe_classifier_search_bm25_retweet_rerank = (tuned_bm25_with_qe >>
+#                                                             pt.text.get_text(index_ref2, ["retweet_score", "classifier_text", "created_at"]) >>
+#                                                             (pt.transformer.IdentityTransformer() **
+#                                                              pt.text.scorer(
+#                                                                 body_attr='classifier_text', wmodel='BM25')
+#                                                              ) >>
+#                                                             pt.apply.doc_score(retweet_score_rerank))
 
 # names = [
 #     'Coordinate Match (no classifier)',
@@ -177,16 +180,24 @@ tuned_bm25_with_qe_classifier_search_bm25_retweet_rerank = (tuned_bm25_with_qe >
 #                     names=names)
 # res.to_csv('final_experiment.csv')
 
-final_algo = tuned_bm25_with_qe_classifier_search_bm25_retweet_rerank
+final_algo = tuned_bm25_with_qe_classifier_search_tfidf_retweet_rerank
+
+def date_converter(datestr):
+    print(datestr)
+    dateparts = datestr.split('-')
+    return datetime.datetime(int(dateparts[0]),int(dateparts[1]),int(dateparts[2]))
 
 
 @app.route("/search/<term>/count/<count>/fromDate/<fromDate>/toDate/<toDate>")
-def search(term, count):
+def search(term, count, fromDate, toDate):
     try:
-        search_result = (final_algo % int(count)).search(term)
+        #pyterrier start
+        search_result = final_algo.search(term)
+        #pyterrier work done :)
+        search_result = search_result.loc[(search_result['created_at']>=fromDate) & (search_result['created_at']<= toDate)]
         result=[]
-        for item in search_result['docno']:
-            result.append(data[docno_to_tweet_map[item]]['id'])
+        for item in search_result.head(int(count))['docno']:
+            result.append({'id': data[docno_to_tweet_map[item]]['id']})
         return result
     except Exception as e:
         print(traceback.format_exc())

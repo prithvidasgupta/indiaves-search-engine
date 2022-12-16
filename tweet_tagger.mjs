@@ -36,7 +36,7 @@ function hasSpecies(normalized_text, specimen){
 }
 
 export function expandDocument(tweet, docno) {
-    const text = tweet.text.replace(/-|#|@|\(|\)|\n|\.|!|:|,/g, ' ').toLowerCase();
+    const text = tweet.text.replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"').replace(/-|#|@|\(|\)|\n|\.|!|:|,/g, ' ').toLowerCase();
     const text_parts = text.split(' ').filter(value => value != '' && value != '\n');
     const normalized_text = ` ${text_parts.join(' ')} `
     const classifiers = new Set()
