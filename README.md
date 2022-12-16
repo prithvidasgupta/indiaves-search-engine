@@ -3,7 +3,18 @@ IndiAves is a curated account which re-tweets pictures of birds, butterflies and
 The aim of this project is to collect the tweets using the #IndiAves hashtag, index them dynamically, classify the birds scientifically and make the collection consistently searchable and allow for the system to retrieve a curated list of birds.
 The project as of right now is hosted on a GCP Compute instance and can be used by anyone with an internet connection. The project uses NodeJS Express, Pyterrier and Flask as its core components.
 
-This README.md is to note steps to run the project locally. Please use the Google Cloud links if you do not intend to run this locally.
+This README.md is to note steps to run the project locally. Please use the Google Cloud links if you do not intend to run this locally. 
+
+[V1 link](http://34.71.21.96:6500/search/v1?count=5&dayFrom=2022-11-01&dayTo=2022-11-15&search=parakeet) 
+
+[V2 link](http://34.71.21.96:6500/search/v2?count=5&dayFrom=2022-11-01&dayTo=2022-11-15&search=parakeet)
+
+The web endpoints are simple HTTP endpoints which take a couple of query parameters and returns an html page with the necessary data. The query params are detailed below:
+```
+count : Number of search results you want (Please do not go beyond 20 or the HTML page will be very slow to load)
+dayFrom, dayTo : Use the parametes to set the date range of the returned results (Example: 2022-11-21)
+search: This is your search query. Enter a text query here. (Example: osprey)
+```
 
 ## How to run the two necessary server to see the web pages?
 
