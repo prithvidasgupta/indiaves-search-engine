@@ -17,10 +17,28 @@ const stopwords = new Set(stopwordsList.toString().split('\r\n'))
 const speciesList = speciesInfo.speciesList
 const speciesMap = speciesInfo.speciesMap
 
+function hasSpecies(normalized_text, specimen){
+    if (normalized_text.includes(` ${specimen} `)){
+        return true;
+    }
+    const spec_parts = specimen.split(' ')
+    if (spec_parts.length>1){
+        if (normalized_text.includes(` ${spec_parts.join('')}`)){
+            return true;
+        }
+    }
+    if (spec_parts.length === 3){
+        if (normalized_text.includes(` ${spec_parts[1]}${spec_parts[2]} `)){
+            return true;
+        } 
+    }
+    return false;
+}
+
 export function expandDocument(tweet, docno) {
     const text = tweet.text.replace(/-|#|@|\(|\)|\n|\.|!|:|,/g, ' ').toLowerCase();
     const text_parts = text.split(' ').filter(value => value != '' && value != '\n');
-    const normalized_text = text_parts.join(' ')
+    const normalized_text = ` ${text_parts.join(' ')} `
     const classifiers = new Set()
     if (normalized_text.includes('titlituesday')) {
         return null;
@@ -34,19 +52,15 @@ export function expandDocument(tweet, docno) {
         }
     }
     for (const specimen of speciesList) {
-        if (specimen === 'ou') {
-            continue;
-        }
-        if (` ${normalized_text} `.includes(` ${specimen} `)
-            || ` ${normalized_text} `.includes(` ${specimen.split(' ').join('')}`)) {
-            classifiers.add(specimen)
-            classifiers.add(speciesMap[specimen].family)
-            classifiers.add(speciesMap[specimen].order)
+        if (hasSpecies(normalized_text, specimen)) {
+            specimen.split(' ').forEach(classifiers.add, classifiers)
+            speciesMap[specimen].family.split(' ').forEach(classifiers.add, classifiers)
+            speciesMap[specimen].order.split(' ').forEach(classifiers.add, classifiers)
             if (speciesList.indexOf(specimen) % 2 == 0) {
-                classifiers.add(speciesList[speciesList.indexOf(specimen) + 1])
+                speciesList[speciesList.indexOf(specimen) + 1].split(' ').forEach(classifiers.add, classifiers)
             }
             else {
-                classifiers.add(speciesList[speciesList.indexOf(specimen) - 1])
+                speciesList[speciesList.indexOf(specimen) - 1].split(' ').forEach(classifiers.add, classifiers)
             }
         }
     }

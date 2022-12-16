@@ -2,5 +2,7 @@ tweets.*
 *secrets.*
 node_modules/*
 node_modules
-*.csv
-*_index/
+
+*_index*/
+*_index*.zip
+*.png

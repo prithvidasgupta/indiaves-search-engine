@@ -1,0 +1,1709 @@
+{
+  "ratites": [
+    "struthioniformes",
+    "rheiformes",
+    "apterygiformes",
+    "casuariiformes",
+    "tinamiformes"
+  ],
+  "landfowls": [
+    "galliformes"
+  ],
+  "waterfowls": [
+    "anseriformes"
+  ],
+  "waterbirds": [
+    "gaviiformes",
+    "sphenisciformes",
+    "procellariiformes",
+    "ciconiiformes",
+    "suliformes",
+    "pelecaniformes",
+    "opisthocomiformes"
+  ],
+  "landbirds": [
+    "accipitriformes",
+    "strigiformes",
+    "coliiformes",
+    "leptosomiformes",
+    "trogoniformes",
+    "bucerotiformes",
+    "coraciiformes",
+    "piciformes",
+    "cariamiformes",
+    "falconiformes",
+    "psittaciformes",
+    "passeriformes"
+  ],
+  "perching birds": [
+    "passeriformes"
+  ],
+  "parrots": [
+    "psittaciformes",
+    "strigopidae",
+    "psittaculidae",
+    "psittacidae"
+  ],
+  "raptors": [
+    "accipitriformes",
+    "falconiformes",
+    "cariamiformes",
+    "strigiformes"
+  ],
+  "intelligent birds": [
+    "psittaciformes",
+    "corvidae"
+  ],
+  "ostriches": [
+    "struthionidae",
+    "struthioniformes"
+  ],
+  "rheas": [
+    "rheidae",
+    "rheiformes"
+  ],
+  "tinamous": [
+    "tinamidae",
+    "tinamiformes"
+  ],
+  "cassowaries and emu": [
+    "casuariidae"
+  ],
+  "cassowaries": [
+    "casuariiformes",
+    "casuariidae"
+  ],
+  "emu": [
+    "casuariiformes",
+    "casuariidae"
+  ],
+  "kiwis": [
+    "apterygidae",
+    "apterygiformes"
+  ],
+  "screamers": [
+    "anhimidae",
+    "anseriformes"
+  ],
+  "magpie goose": [
+    "anseranatidae",
+    "anseriformes"
+  ],
+  "magpie": [
+    "anseriformes",
+    "anseranatidae"
+  ],
+  "goose": [
+    "anseriformes",
+    "anseranatidae"
+  ],
+  "ducks geese and waterfowl": [
+    "anatidae"
+  ],
+  "ducks": [
+    "anseriformes",
+    "anatidae"
+  ],
+  "geese": [
+    "anseriformes",
+    "anatidae"
+  ],
+  "waterfowl": [
+    "anseriformes",
+    "anatidae"
+  ],
+  "megapodes": [
+    "megapodiidae",
+    "galliformes"
+  ],
+  "guans chachalacas and curassows": [
+    "cracidae"
+  ],
+  "guans": [
+    "galliformes",
+    "cracidae"
+  ],
+  "chachalacas": [
+    "galliformes",
+    "cracidae"
+  ],
+  "curassows": [
+    "galliformes",
+    "cracidae"
+  ],
+  "guineafowl": [
+    "numididae",
+    "galliformes"
+  ],
+  "new world quail": [
+    "odontophoridae"
+  ],
+  "new": [
+    "galliformes",
+    "odontophoridae",
+    "cathartiformes",
+    "cathartidae",
+    "piciformes",
+    "capitonidae",
+    "psittaciformes",
+    "strigopidae",
+    "psittacidae",
+    "passeriformes",
+    "acanthisittidae",
+    "passerellidae",
+    "parulidae"
+  ],
+  "world": [
+    "galliformes",
+    "odontophoridae",
+    "cathartiformes",
+    "cathartidae",
+    "piciformes",
+    "capitonidae",
+    "psittaciformes",
+    "psittaculidae",
+    "psittacidae",
+    "passeriformes",
+    "oriolidae",
+    "muscicapidae",
+    "passeridae",
+    "emberizidae",
+    "passerellidae",
+    "parulidae"
+  ],
+  "quail": [
+    "galliformes",
+    "odontophoridae"
+  ],
+  "pheasants grouse ": [
+    "phasianidae"
+  ],
+  "pheasants": [
+    "galliformes",
+    "phasianidae"
+  ],
+  "grouse": [
+    "galliformes",
+    "phasianidae"
+  ],
+  "flamingos": [
+    "phoenicopteridae",
+    "phoenicopteriformes"
+  ],
+  "grebes": [
+    "podicipedidae",
+    "podicipediformes"
+  ],
+  "pigeons and doves": [
+    "columbidae"
+  ],
+  "pigeons": [
+    "columbiformes",
+    "columbidae"
+  ],
+  "doves": [
+    "columbiformes",
+    "columbidae"
+  ],
+  "mesites": [
+    "mesitornithidae",
+    "mesitornithiformes"
+  ],
+  "sandgrouse": [
+    "pteroclidae",
+    "pterocliformes"
+  ],
+  "bustards": [
+    "otididae",
+    "otidiformes"
+  ],
+  "turacos": [
+    "musophagidae",
+    "musophagiformes"
+  ],
+  "cuckoos": [
+    "cuculidae",
+    "cuculiformes"
+  ],
+  "frogmouths": [
+    "podargidae",
+    "caprimulgiformes"
+  ],
+  "nightjars ": [
+    "caprimulgidae"
+  ],
+  "nightjars": [
+    "caprimulgiformes",
+    "caprimulgidae"
+  ],
+  "potoos": [
+    "nyctibiidae",
+    "caprimulgiformes"
+  ],
+  "oilbird": [
+    "steatornithidae",
+    "caprimulgiformes"
+  ],
+  "owlet-nightjars": [
+    "aegothelidae",
+    "caprimulgiformes"
+  ],
+  "swifts": [
+    "apodidae",
+    "caprimulgiformes"
+  ],
+  "treeswifts": [
+    "hemiprocnidae",
+    "caprimulgiformes"
+  ],
+  "hummingbirds": [
+    "trochilidae",
+    "caprimulgiformes"
+  ],
+  "hoatzin": [
+    "opisthocomidae",
+    "opisthocomiformes"
+  ],
+  "flufftails": [
+    "sarothruridae",
+    "gruiformes"
+  ],
+  "rails gallinules and coots": [
+    "rallidae"
+  ],
+  "rails": [
+    "gruiformes",
+    "rallidae"
+  ],
+  "gallinules": [
+    "gruiformes",
+    "rallidae"
+  ],
+  "coots": [
+    "gruiformes",
+    "rallidae"
+  ],
+  "finfoots": [
+    "heliornithidae",
+    "gruiformes"
+  ],
+  "limpkin": [
+    "aramidae",
+    "gruiformes"
+  ],
+  "trumpeters": [
+    "psophiidae",
+    "gruiformes"
+  ],
+  "cranes": [
+    "gruidae",
+    "gruiformes"
+  ],
+  "sheathbills": [
+    "chionidae",
+    "charadriiformes"
+  ],
+  "magellanic plover": [
+    "pluvianellidae",
+    "charadriiformes"
+  ],
+  "magellanic": [
+    "charadriiformes",
+    "pluvianellidae"
+  ],
+  "plover": [
+    "charadriiformes",
+    "pluvianellidae",
+    "pluvianidae"
+  ],
+  "thick-knees": [
+    "burhinidae",
+    "charadriiformes"
+  ],
+  "egyptian plover": [
+    "pluvianidae",
+    "charadriiformes"
+  ],
+  "egyptian": [
+    "charadriiformes",
+    "pluvianidae"
+  ],
+  "stilts and avocets": [
+    "recurvirostridae"
+  ],
+  "stilts": [
+    "charadriiformes",
+    "recurvirostridae"
+  ],
+  "avocets": [
+    "charadriiformes",
+    "recurvirostridae"
+  ],
+  "ibisbill": [
+    "ibidorhynchidae",
+    "charadriiformes"
+  ],
+  "oystercatchers": [
+    "haematopodidae",
+    "charadriiformes"
+  ],
+  "plovers and lapwings": [
+    "charadriidae"
+  ],
+  "plovers": [
+    "charadriiformes",
+    "charadriidae"
+  ],
+  "lapwings": [
+    "charadriiformes",
+    "charadriidae"
+  ],
+  "plains-wanderer": [
+    "pedionomidae",
+    "charadriiformes"
+  ],
+  "seedsnipes": [
+    "thinocoridae",
+    "charadriiformes"
+  ],
+  "painted-snipes": [
+    "rostratulidae",
+    "charadriiformes"
+  ],
+  "jacanas": [
+    "jacanidae",
+    "charadriiformes"
+  ],
+  "sandpipers ": [
+    "scolopacidae"
+  ],
+  "sandpipers": [
+    "charadriiformes",
+    "scolopacidae"
+  ],
+  "buttonquail": [
+    "turnicidae",
+    "charadriiformes"
+  ],
+  "crab-plover": [
+    "dromadidae",
+    "charadriiformes"
+  ],
+  "pratincoles and coursers": [
+    "glareolidae"
+  ],
+  "pratincoles": [
+    "charadriiformes",
+    "glareolidae"
+  ],
+  "coursers": [
+    "charadriiformes",
+    "glareolidae"
+  ],
+  "skuas and jaegers": [
+    "stercorariidae"
+  ],
+  "skuas": [
+    "charadriiformes",
+    "stercorariidae"
+  ],
+  "jaegers": [
+    "charadriiformes",
+    "stercorariidae"
+  ],
+  "auks murres and puffins": [
+    "alcidae"
+  ],
+  "auks": [
+    "charadriiformes",
+    "alcidae"
+  ],
+  "murres": [
+    "charadriiformes",
+    "alcidae"
+  ],
+  "puffins": [
+    "charadriiformes",
+    "alcidae"
+  ],
+  "gulls terns and skimmers": [
+    "laridae"
+  ],
+  "gulls": [
+    "charadriiformes",
+    "laridae"
+  ],
+  "terns": [
+    "charadriiformes",
+    "laridae"
+  ],
+  "skimmers": [
+    "charadriiformes",
+    "laridae"
+  ],
+  "kagu": [
+    "rhynochetidae",
+    "eurypygiformes"
+  ],
+  "sunbittern": [
+    "eurypygidae",
+    "eurypygiformes"
+  ],
+  "tropicbirds": [
+    "phaethontidae",
+    "phaethontiformes"
+  ],
+  "loons": [
+    "gaviidae",
+    "gaviiformes"
+  ],
+  "penguins": [
+    "spheniscidae",
+    "sphenisciformes"
+  ],
+  "albatrosses": [
+    "diomedeidae",
+    "procellariiformes"
+  ],
+  "southern storm-petrels": [
+    "oceanitidae"
+  ],
+  "southern": [
+    "procellariiformes",
+    "oceanitidae"
+  ],
+  "storm-petrels": [
+    "procellariiformes",
+    "oceanitidae",
+    "hydrobatidae"
+  ],
+  "northern storm-petrels": [
+    "hydrobatidae"
+  ],
+  "northern": [
+    "procellariiformes",
+    "hydrobatidae"
+  ],
+  "shearwaters and petrels": [
+    "procellariidae"
+  ],
+  "shearwaters": [
+    "procellariiformes",
+    "procellariidae"
+  ],
+  "petrels": [
+    "procellariiformes",
+    "procellariidae"
+  ],
+  "storks": [
+    "ciconiidae",
+    "ciconiiformes"
+  ],
+  "frigatebirds": [
+    "fregatidae",
+    "suliformes"
+  ],
+  "boobies and gannets": [
+    "sulidae"
+  ],
+  "boobies": [
+    "suliformes",
+    "sulidae"
+  ],
+  "gannets": [
+    "suliformes",
+    "sulidae"
+  ],
+  "anhingas": [
+    "anhingidae",
+    "suliformes"
+  ],
+  "cormorants and shags": [
+    "phalacrocoracidae"
+  ],
+  "cormorants": [
+    "suliformes",
+    "phalacrocoracidae"
+  ],
+  "shags": [
+    "suliformes",
+    "phalacrocoracidae"
+  ],
+  "pelicans": [
+    "pelecanidae",
+    "pelecaniformes"
+  ],
+  "shoebill": [
+    "balaenicipitidae",
+    "pelecaniformes"
+  ],
+  "hamerkop": [
+    "scopidae",
+    "pelecaniformes"
+  ],
+  "herons egrets and bitterns": [
+    "ardeidae"
+  ],
+  "herons": [
+    "pelecaniformes",
+    "ardeidae"
+  ],
+  "egrets": [
+    "pelecaniformes",
+    "ardeidae"
+  ],
+  "bitterns": [
+    "pelecaniformes",
+    "ardeidae"
+  ],
+  "ibises and spoonbills": [
+    "threskiornithidae"
+  ],
+  "ibises": [
+    "pelecaniformes",
+    "threskiornithidae"
+  ],
+  "spoonbills": [
+    "pelecaniformes",
+    "threskiornithidae"
+  ],
+  "new world vultures": [
+    "cathartidae"
+  ],
+  "vultures": [
+    "cathartiformes",
+    "cathartidae"
+  ],
+  "secretarybird": [
+    "sagittariidae",
+    "accipitriformes"
+  ],
+  "osprey": [
+    "pandionidae",
+    "accipitriformes"
+  ],
+  "hawks eagles and kites": [
+    "accipitridae"
+  ],
+  "hawks": [
+    "accipitriformes",
+    "accipitridae"
+  ],
+  "eagles": [
+    "accipitriformes",
+    "accipitridae"
+  ],
+  "kites": [
+    "accipitriformes",
+    "accipitridae"
+  ],
+  "barn-owls": [
+    "tytonidae",
+    "strigiformes"
+  ],
+  "owls": [
+    "strigidae",
+    "strigiformes"
+  ],
+  "mousebirds": [
+    "coliidae",
+    "coliiformes"
+  ],
+  "cuckoo-roller": [
+    "leptosomidae",
+    "leptosomiformes"
+  ],
+  "trogons": [
+    "trogonidae",
+    "trogoniformes"
+  ],
+  "hoopoes": [
+    "upupidae",
+    "bucerotiformes"
+  ],
+  "woodhoopoes and scimitarbills": [
+    "phoeniculidae"
+  ],
+  "woodhoopoes": [
+    "bucerotiformes",
+    "phoeniculidae"
+  ],
+  "scimitarbills": [
+    "bucerotiformes",
+    "phoeniculidae"
+  ],
+  "ground-hornbills": [
+    "bucorvidae",
+    "bucerotiformes"
+  ],
+  "hornbills": [
+    "bucerotidae",
+    "bucerotiformes"
+  ],
+  "todies": [
+    "todidae",
+    "coraciiformes"
+  ],
+  "motmots": [
+    "momotidae",
+    "coraciiformes"
+  ],
+  "kingfishers": [
+    "alcedinidae",
+    "coraciiformes"
+  ],
+  "bee-eaters": [
+    "meropidae",
+    "coraciiformes"
+  ],
+  "rollers": [
+    "coraciidae",
+    "coraciiformes"
+  ],
+  "ground-rollers": [
+    "brachypteraciidae",
+    "coraciiformes"
+  ],
+  "puffbirds": [
+    "bucconidae",
+    "galbuliformes"
+  ],
+  "jacamars": [
+    "galbulidae",
+    "galbuliformes"
+  ],
+  "african barbets": [
+    "lybiidae"
+  ],
+  "african": [
+    "piciformes",
+    "lybiidae",
+    "psittaciformes",
+    "psittacidae",
+    "passeriformes",
+    "calyptomenidae",
+    "macrosphenidae"
+  ],
+  "barbets": [
+    "piciformes",
+    "lybiidae",
+    "megalaimidae",
+    "capitonidae"
+  ],
+  "asian barbets": [
+    "megalaimidae"
+  ],
+  "asian": [
+    "piciformes",
+    "megalaimidae",
+    "passeriformes",
+    "eurylaimidae"
+  ],
+  "new world barbets": [
+    "capitonidae"
+  ],
+  "toucan-barbets": [
+    "semnornithidae",
+    "piciformes"
+  ],
+  "toucans": [
+    "ramphastidae",
+    "piciformes"
+  ],
+  "honeyguides": [
+    "indicatoridae",
+    "piciformes"
+  ],
+  "woodpeckers": [
+    "picidae",
+    "piciformes"
+  ],
+  "seriemas": [
+    "cariamidae",
+    "cariamiformes"
+  ],
+  "falcons and caracaras": [
+    "falconidae"
+  ],
+  "falcons": [
+    "falconiformes",
+    "falconidae"
+  ],
+  "caracaras": [
+    "falconiformes",
+    "falconidae"
+  ],
+  "new zealand parrots": [
+    "strigopidae"
+  ],
+  "zealand": [
+    "psittaciformes",
+    "strigopidae",
+    "passeriformes",
+    "acanthisittidae"
+  ],
+  "cockatoos": [
+    "cacatuidae",
+    "psittaciformes"
+  ],
+  "old world parrots": [
+    "psittaculidae"
+  ],
+  "old": [
+    "psittaciformes",
+    "psittaculidae",
+    "passeriformes",
+    "oriolidae",
+    "muscicapidae",
+    "passeridae",
+    "emberizidae"
+  ],
+  "new world and african parrots": [
+    "psittacidae"
+  ],
+  "new zealand wrens": [
+    "acanthisittidae"
+  ],
+  "wrens": [
+    "troglodytidae",
+    "passeriformes"
+  ],
+  "african and green broadbills": [
+    "calyptomenidae"
+  ],
+  "green": [
+    "passeriformes",
+    "calyptomenidae"
+  ],
+  "broadbills": [
+    "passeriformes",
+    "calyptomenidae",
+    "eurylaimidae"
+  ],
+  "asian and grauer's broadbills": [
+    "eurylaimidae"
+  ],
+  "grauer's": [
+    "passeriformes",
+    "eurylaimidae"
+  ],
+  "sapayoa": [
+    "sapayoidae",
+    "passeriformes"
+  ],
+  "asities": [
+    "philepittidae",
+    "passeriformes"
+  ],
+  "pittas": [
+    "pittidae",
+    "passeriformes"
+  ],
+  "typical antbirds": [
+    "thamnophilidae"
+  ],
+  "typical": [
+    "passeriformes",
+    "thamnophilidae"
+  ],
+  "antbirds": [
+    "passeriformes",
+    "thamnophilidae"
+  ],
+  "crescentchests": [
+    "melanopareiidae",
+    "passeriformes"
+  ],
+  "gnateaters": [
+    "conopophagidae",
+    "passeriformes"
+  ],
+  "antpittas": [
+    "grallariidae",
+    "passeriformes"
+  ],
+  "tapaculos": [
+    "rhinocryptidae",
+    "passeriformes"
+  ],
+  "antthrushes": [
+    "formicariidae",
+    "passeriformes"
+  ],
+  "ovenbirds and woodcreepers": [
+    "furnariidae"
+  ],
+  "ovenbirds": [
+    "passeriformes",
+    "furnariidae"
+  ],
+  "woodcreepers": [
+    "passeriformes",
+    "furnariidae"
+  ],
+  "manakins": [
+    "pipridae",
+    "passeriformes"
+  ],
+  "cotingas": [
+    "cotingidae",
+    "passeriformes"
+  ],
+  "tityras ": [
+    "tityridae"
+  ],
+  "tityras": [
+    "passeriformes",
+    "tityridae"
+  ],
+  "sharpbill royal flycatcher ": [
+    "oxyruncidae"
+  ],
+  "sharpbill": [
+    "passeriformes",
+    "oxyruncidae"
+  ],
+  "royal": [
+    "passeriformes",
+    "oxyruncidae"
+  ],
+  "flycatcher": [
+    "passeriformes",
+    "oxyruncidae"
+  ],
+  "tyrant flycatchers": [
+    "tyrannidae"
+  ],
+  "tyrant": [
+    "passeriformes",
+    "tyrannidae"
+  ],
+  "flycatchers": [
+    "passeriformes",
+    "tyrannidae",
+    "monarchidae",
+    "stenostiridae",
+    "muscicapidae"
+  ],
+  "lyrebirds": [
+    "menuridae",
+    "passeriformes"
+  ],
+  "scrub-birds": [
+    "atrichornithidae",
+    "passeriformes"
+  ],
+  "bowerbirds": [
+    "ptilonorhynchidae",
+    "passeriformes"
+  ],
+  "australasian treecreepers": [
+    "climacteridae"
+  ],
+  "australasian": [
+    "passeriformes",
+    "climacteridae",
+    "petroicidae"
+  ],
+  "treecreepers": [
+    "certhiidae",
+    "passeriformes"
+  ],
+  "fairywrens": [
+    "maluridae",
+    "passeriformes"
+  ],
+  "honeyeaters": [
+    "meliphagidae",
+    "passeriformes",
+    "mohoidae"
+  ],
+  "bristlebirds": [
+    "dasyornithidae",
+    "passeriformes"
+  ],
+  "pardalotes": [
+    "pardalotidae",
+    "passeriformes"
+  ],
+  "thornbills ": [
+    "acanthizidae"
+  ],
+  "thornbills": [
+    "passeriformes",
+    "acanthizidae"
+  ],
+  "pseudo-babblers": [
+    "pomatostomidae",
+    "passeriformes"
+  ],
+  "logrunners": [
+    "orthonychidae",
+    "passeriformes"
+  ],
+  "quail-thrushes and jewel-babblers": [
+    "cinclosomatidae"
+  ],
+  "quail-thrushes": [
+    "passeriformes",
+    "cinclosomatidae"
+  ],
+  "jewel-babblers": [
+    "passeriformes",
+    "cinclosomatidae"
+  ],
+  "cuckooshrikes": [
+    "campephagidae",
+    "passeriformes"
+  ],
+  "whiteheads": [
+    "mohouidae",
+    "passeriformes"
+  ],
+  "sittellas": [
+    "neosittidae",
+    "passeriformes"
+  ],
+  "whipbirds and wedgebills": [
+    "psophodidae"
+  ],
+  "whipbirds": [
+    "passeriformes",
+    "psophodidae"
+  ],
+  "wedgebills": [
+    "passeriformes",
+    "psophodidae"
+  ],
+  "ploughbill": [
+    "eulacestomatidae",
+    "passeriformes"
+  ],
+  "australo-papuan bellbirds": [
+    "oreoicidae"
+  ],
+  "australo-papuan": [
+    "passeriformes",
+    "oreoicidae"
+  ],
+  "bellbirds": [
+    "passeriformes",
+    "oreoicidae"
+  ],
+  "shrike-tits": [
+    "falcunculidae",
+    "passeriformes"
+  ],
+  "tit berrypecker and crested berrypecker": [
+    "paramythiidae"
+  ],
+  "tit": [
+    "passeriformes",
+    "paramythiidae"
+  ],
+  "berrypecker": [
+    "passeriformes",
+    "paramythiidae"
+  ],
+  "crested": [
+    "passeriformes",
+    "paramythiidae",
+    "platylophidae"
+  ],
+  "vireos shrike-babblers and erpornis": [
+    "vireonidae"
+  ],
+  "vireos": [
+    "passeriformes",
+    "vireonidae"
+  ],
+  "shrike-babblers": [
+    "passeriformes",
+    "vireonidae"
+  ],
+  "erpornis": [
+    "passeriformes",
+    "vireonidae"
+  ],
+  "whistlers ": [
+    "pachycephalidae"
+  ],
+  "whistlers": [
+    "passeriformes",
+    "pachycephalidae"
+  ],
+  "old world orioles": [
+    "oriolidae"
+  ],
+  "orioles": [
+    "passeriformes",
+    "oriolidae"
+  ],
+  "boatbills": [
+    "machaerirhynchidae",
+    "passeriformes"
+  ],
+  "woodswallows bellmagpies ": [
+    "artamidae"
+  ],
+  "woodswallows": [
+    "passeriformes",
+    "artamidae"
+  ],
+  "bellmagpies": [
+    "passeriformes",
+    "artamidae"
+  ],
+  "mottled berryhunter": [
+    "rhagologidae",
+    "passeriformes"
+  ],
+  "mottled": [
+    "passeriformes",
+    "rhagologidae"
+  ],
+  "berryhunter": [
+    "passeriformes",
+    "rhagologidae"
+  ],
+  "wattle-eyes and batises": [
+    "platysteiridae"
+  ],
+  "wattle-eyes": [
+    "passeriformes",
+    "platysteiridae"
+  ],
+  "batises": [
+    "passeriformes",
+    "platysteiridae"
+  ],
+  "vangas helmetshrikes ": [
+    "vangidae"
+  ],
+  "vangas": [
+    "passeriformes",
+    "vangidae"
+  ],
+  "helmetshrikes": [
+    "passeriformes",
+    "vangidae"
+  ],
+  "bristlehead": [
+    "pityriasidae",
+    "passeriformes"
+  ],
+  "ioras": [
+    "aegithinidae",
+    "passeriformes"
+  ],
+  "bushshrikes ": [
+    "malaconotidae"
+  ],
+  "bushshrikes": [
+    "passeriformes",
+    "malaconotidae"
+  ],
+  "fantails": [
+    "rhipiduridae",
+    "passeriformes"
+  ],
+  "drongos": [
+    "dicruridae",
+    "passeriformes"
+  ],
+  "birds-of-paradise": [
+    "paradisaeidae",
+    "passeriformes"
+  ],
+  "ifrita": [
+    "ifritidae",
+    "passeriformes"
+  ],
+  "monarch flycatchers": [
+    "monarchidae"
+  ],
+  "monarch": [
+    "passeriformes",
+    "monarchidae"
+  ],
+  "white-winged chough and apostlebird": [
+    "corcoracidae"
+  ],
+  "white-winged": [
+    "passeriformes",
+    "corcoracidae"
+  ],
+  "chough": [
+    "passeriformes",
+    "corcoracidae"
+  ],
+  "apostlebird": [
+    "passeriformes",
+    "corcoracidae"
+  ],
+  "melampittas": [
+    "melampittidae",
+    "passeriformes"
+  ],
+  "crested shrikejay": [
+    "platylophidae",
+    "passeriformes"
+  ],
+  "shrikejay": [
+    "passeriformes",
+    "platylophidae"
+  ],
+  "shrikes": [
+    "laniidae",
+    "passeriformes"
+  ],
+  "crows jays and magpies": [
+    "corvidae"
+  ],
+  "crows": [
+    "passeriformes",
+    "corvidae"
+  ],
+  "jays": [
+    "passeriformes",
+    "corvidae"
+  ],
+  "magpies": [
+    "passeriformes",
+    "corvidae"
+  ],
+  "satinbirds": [
+    "cnemophilidae",
+    "passeriformes"
+  ],
+  "berrypeckers and longbills": [
+    "melanocharitidae"
+  ],
+  "berrypeckers": [
+    "passeriformes",
+    "melanocharitidae"
+  ],
+  "longbills": [
+    "passeriformes",
+    "melanocharitidae"
+  ],
+  "wattlebirds": [
+    "callaeidae",
+    "passeriformes"
+  ],
+  "stitchbird": [
+    "notiomystidae",
+    "passeriformes"
+  ],
+  "australasian robins": [
+    "petroicidae"
+  ],
+  "robins": [
+    "passeriformes",
+    "petroicidae"
+  ],
+  "rockfowl": [
+    "picathartidae",
+    "passeriformes"
+  ],
+  "rockjumpers": [
+    "chaetopidae",
+    "passeriformes"
+  ],
+  "rail-babbler": [
+    "eupetidae",
+    "passeriformes"
+  ],
+  "hyliotas": [
+    "hyliotidae",
+    "passeriformes"
+  ],
+  "fairy flycatchers": [
+    "stenostiridae"
+  ],
+  "fairy": [
+    "passeriformes",
+    "stenostiridae"
+  ],
+  "tits chickadees and titmice": [
+    "paridae"
+  ],
+  "tits": [
+    "passeriformes",
+    "paridae",
+    "aegithalidae"
+  ],
+  "chickadees": [
+    "passeriformes",
+    "paridae"
+  ],
+  "titmice": [
+    "passeriformes",
+    "paridae"
+  ],
+  "penduline-tits": [
+    "remizidae",
+    "passeriformes"
+  ],
+  "larks": [
+    "alaudidae",
+    "passeriformes"
+  ],
+  "bearded reedling": [
+    "panuridae",
+    "passeriformes"
+  ],
+  "bearded": [
+    "passeriformes",
+    "panuridae"
+  ],
+  "reedling": [
+    "passeriformes",
+    "panuridae"
+  ],
+  "nicators": [
+    "nicatoridae",
+    "passeriformes"
+  ],
+  "african warblers": [
+    "macrosphenidae"
+  ],
+  "warblers": [
+    "passeriformes",
+    "macrosphenidae",
+    "acrocephalidae",
+    "bernieridae",
+    "phylloscopidae",
+    "scotocercidae",
+    "sylviidae",
+    "teretistridae",
+    "parulidae"
+  ],
+  "cisticolas ": [
+    "cisticolidae"
+  ],
+  "cisticolas": [
+    "passeriformes",
+    "cisticolidae"
+  ],
+  "reed warblers ": [
+    "acrocephalidae"
+  ],
+  "reed": [
+    "passeriformes",
+    "acrocephalidae"
+  ],
+  "grassbirds ": [
+    "locustellidae"
+  ],
+  "grassbirds": [
+    "passeriformes",
+    "locustellidae"
+  ],
+  "donacobius": [
+    "donacobiidae",
+    "passeriformes"
+  ],
+  "malagasy warblers": [
+    "bernieridae"
+  ],
+  "malagasy": [
+    "passeriformes",
+    "bernieridae"
+  ],
+  "cupwings": [
+    "pnoepygidae",
+    "passeriformes"
+  ],
+  "swallows": [
+    "hirundinidae",
+    "passeriformes"
+  ],
+  "bulbuls": [
+    "pycnonotidae",
+    "passeriformes"
+  ],
+  "leaf warblers": [
+    "phylloscopidae"
+  ],
+  "leaf": [
+    "passeriformes",
+    "phylloscopidae"
+  ],
+  "bush warblers ": [
+    "scotocercidae"
+  ],
+  "bush": [
+    "passeriformes",
+    "scotocercidae"
+  ],
+  "long-tailed tits": [
+    "aegithalidae"
+  ],
+  "long-tailed": [
+    "passeriformes",
+    "aegithalidae"
+  ],
+  "sylviid warblers parrotbills ": [
+    "sylviidae"
+  ],
+  "sylviid": [
+    "passeriformes",
+    "sylviidae"
+  ],
+  "parrotbills": [
+    "passeriformes",
+    "sylviidae"
+  ],
+  "white-eyes yuhinas ": [
+    "zosteropidae"
+  ],
+  "white-eyes": [
+    "passeriformes",
+    "zosteropidae"
+  ],
+  "yuhinas": [
+    "passeriformes",
+    "zosteropidae"
+  ],
+  "tree-babblers scimitar-babblers ": [
+    "timaliidae"
+  ],
+  "tree-babblers": [
+    "passeriformes",
+    "timaliidae"
+  ],
+  "scimitar-babblers": [
+    "passeriformes",
+    "timaliidae"
+  ],
+  "ground babblers ": [
+    "pellorneidae"
+  ],
+  "ground": [
+    "passeriformes",
+    "pellorneidae"
+  ],
+  "babblers": [
+    "passeriformes",
+    "pellorneidae"
+  ],
+  "laughingthrushes ": [
+    "leiothrichidae"
+  ],
+  "laughingthrushes": [
+    "passeriformes",
+    "leiothrichidae"
+  ],
+  "kinglets": [
+    "regulidae",
+    "passeriformes"
+  ],
+  "wallcreeper": [
+    "tichodromidae",
+    "passeriformes"
+  ],
+  "nuthatches": [
+    "sittidae",
+    "passeriformes"
+  ],
+  "gnatcatchers": [
+    "polioptilidae",
+    "passeriformes"
+  ],
+  "spotted elachura": [
+    "elachuridae",
+    "passeriformes"
+  ],
+  "spotted": [
+    "passeriformes",
+    "elachuridae"
+  ],
+  "elachura": [
+    "passeriformes",
+    "elachuridae"
+  ],
+  "dippers": [
+    "cinclidae",
+    "passeriformes"
+  ],
+  "oxpeckers": [
+    "buphagidae",
+    "passeriformes"
+  ],
+  "starlings": [
+    "sturnidae",
+    "passeriformes"
+  ],
+  "mockingbirds and thrashers": [
+    "mimidae"
+  ],
+  "mockingbirds": [
+    "passeriformes",
+    "mimidae"
+  ],
+  "thrashers": [
+    "passeriformes",
+    "mimidae"
+  ],
+  "thrushes ": [
+    "turdidae"
+  ],
+  "thrushes": [
+    "passeriformes",
+    "turdidae"
+  ],
+  "old world flycatchers": [
+    "muscicapidae"
+  ],
+  "waxwings": [
+    "bombycillidae",
+    "passeriformes"
+  ],
+  "hawaiian honeyeaters": [
+    "mohoidae"
+  ],
+  "hawaiian": [
+    "passeriformes",
+    "mohoidae"
+  ],
+  "silky-flycatchers": [
+    "ptiliogonatidae",
+    "passeriformes"
+  ],
+  "palmchat": [
+    "dulidae",
+    "passeriformes"
+  ],
+  "hylocitrea": [
+    "hylocitreidae",
+    "passeriformes"
+  ],
+  "hypocolius": [
+    "hypocoliidae",
+    "passeriformes"
+  ],
+  "sugarbirds": [
+    "promeropidae",
+    "passeriformes"
+  ],
+  "dapple-throat ": [
+    "modulatricidae"
+  ],
+  "dapple-throat": [
+    "passeriformes",
+    "modulatricidae"
+  ],
+  "flowerpeckers": [
+    "dicaeidae",
+    "passeriformes"
+  ],
+  "sunbirds and spiderhunters": [
+    "nectariniidae"
+  ],
+  "sunbirds": [
+    "passeriformes",
+    "nectariniidae"
+  ],
+  "spiderhunters": [
+    "passeriformes",
+    "nectariniidae"
+  ],
+  "fairy-bluebirds": [
+    "irenidae",
+    "passeriformes"
+  ],
+  "leafbirds": [
+    "chloropseidae",
+    "passeriformes"
+  ],
+  "olive warbler": [
+    "peucedramidae",
+    "passeriformes"
+  ],
+  "olive": [
+    "passeriformes",
+    "peucedramidae"
+  ],
+  "warbler": [
+    "passeriformes",
+    "peucedramidae"
+  ],
+  "przevalski's pinktail": [
+    "urocynchramidae",
+    "passeriformes"
+  ],
+  "przevalski's": [
+    "passeriformes",
+    "urocynchramidae"
+  ],
+  "pinktail": [
+    "passeriformes",
+    "urocynchramidae"
+  ],
+  "weavers ": [
+    "ploceidae"
+  ],
+  "weavers": [
+    "passeriformes",
+    "ploceidae"
+  ],
+  "waxbills ": [
+    "estrildidae"
+  ],
+  "waxbills": [
+    "passeriformes",
+    "estrildidae"
+  ],
+  "indigobirds": [
+    "viduidae",
+    "passeriformes"
+  ],
+  "accentors": [
+    "prunellidae",
+    "passeriformes"
+  ],
+  "old world sparrows": [
+    "passeridae"
+  ],
+  "sparrows": [
+    "passeriformes",
+    "passeridae",
+    "passerellidae"
+  ],
+  "wagtails and pipits": [
+    "motacillidae"
+  ],
+  "wagtails": [
+    "passeriformes",
+    "motacillidae"
+  ],
+  "pipits": [
+    "passeriformes",
+    "motacillidae"
+  ],
+  "finches euphonias ": [
+    "fringillidae"
+  ],
+  "finches": [
+    "passeriformes",
+    "fringillidae"
+  ],
+  "euphonias": [
+    "passeriformes",
+    "fringillidae"
+  ],
+  "longspurs and snow buntings": [
+    "calcariidae"
+  ],
+  "longspurs": [
+    "passeriformes",
+    "calcariidae"
+  ],
+  "snow": [
+    "passeriformes",
+    "calcariidae"
+  ],
+  "buntings": [
+    "passeriformes",
+    "calcariidae",
+    "emberizidae"
+  ],
+  "thrush-tanager": [
+    "rhodinocichlidae",
+    "passeriformes"
+  ],
+  "old world buntings": [
+    "emberizidae"
+  ],
+  "new world sparrows": [
+    "passerellidae"
+  ],
+  "chat-tanagers": [
+    "calyptophilidae",
+    "passeriformes"
+  ],
+  "hispaniolan tanagers": [
+    "phaenicophilidae"
+  ],
+  "hispaniolan": [
+    "passeriformes",
+    "phaenicophilidae"
+  ],
+  "tanagers": [
+    "passeriformes",
+    "phaenicophilidae",
+    "mitrospingidae",
+    "thraupidae"
+  ],
+  "puerto rican tanager": [
+    "nesospingidae",
+    "passeriformes"
+  ],
+  "puerto": [
+    "passeriformes",
+    "nesospingidae"
+  ],
+  "rican": [
+    "passeriformes",
+    "nesospingidae"
+  ],
+  "tanager": [
+    "passeriformes",
+    "nesospingidae"
+  ],
+  "spindalises": [
+    "spindalidae",
+    "passeriformes"
+  ],
+  "wrenthrush": [
+    "zeledoniidae",
+    "passeriformes"
+  ],
+  "cuban warblers": [
+    "teretistridae"
+  ],
+  "cuban": [
+    "passeriformes",
+    "teretistridae"
+  ],
+  "yellow-breasted chat": [
+    "icteriidae",
+    "passeriformes"
+  ],
+  "yellow-breasted": [
+    "passeriformes",
+    "icteriidae"
+  ],
+  "chat": [
+    "passeriformes",
+    "icteriidae"
+  ],
+  "troupials ": [
+    "icteridae"
+  ],
+  "troupials": [
+    "passeriformes",
+    "icteridae"
+  ],
+  "new world warblers": [
+    "parulidae"
+  ],
+  "mitrospingid tanagers": [
+    "mitrospingidae"
+  ],
+  "mitrospingid": [
+    "passeriformes",
+    "mitrospingidae"
+  ],
+  "cardinals ": [
+    "cardinalidae"
+  ],
+  "cardinals": [
+    "passeriformes",
+    "cardinalidae"
+  ],
+  "tanagers ": [
+    "thraupidae"
+  ]
+}
