@@ -1,9 +1,13 @@
 # IndiAves Curation Engine
+
+<img src="https://imgur.com/5sWNZhl.png"/>
 IndiAves is a curated account which re-tweets pictures of birds, butterflies and sometimes (rarely) other animals which use the #IndiAves hashtag. They also have special events such as #TitliTuesday or #BrownBirds which focus on special occasions or themes. There are people behind this account who retweet almost every single relevant (only avian or etymological) tweet using the #IndiAves manually at set times during the day. While the number of net tweets is reduced, due to the huge volume of the source material (people using #IndiAves) the curation aspect of the account is significantly reduced.
 The aim of this project is to collect the tweets using the #IndiAves hashtag, index them dynamically, classify the birds scientifically and make the collection consistently searchable and allow for the system to retrieve a curated list of birds.
 The project as of right now is hosted on a GCP Compute instance and can be used by anyone with an internet connection. The project uses NodeJS Express, Pyterrier and Flask as its core components.
 
 This README.md is to note steps to run the project locally. Please use the Google Cloud links if you do not intend to run this locally. 
+
+<img src="https://i.imgur.com/0MfOw4z.png"/>
 
 [V1 link](http://34.71.21.96:6500/search/v1?count=5&dayFrom=2022-11-01&dayTo=2022-11-15&search=parakeet) 
 
