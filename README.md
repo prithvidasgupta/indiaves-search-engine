@@ -1,4 +1,4 @@
-# IndiAves Curation Engine
+# [IndiAves Curation Engine](https://drive.google.com/file/d/1ptYhFSkfdRtF5gC6Snj7ejrj6B3OkEbB/view?usp=sharing)
 
 <img src="https://imgur.com/5sWNZhl.png"/>
 IndiAves is a curated account which re-tweets pictures of birds, butterflies and sometimes (rarely) other animals which use the #IndiAves hashtag. They also have special events such as #TitliTuesday or #BrownBirds which focus on special occasions or themes. There are people behind this account who retweet almost every single relevant (only avian or etymological) tweet using the #IndiAves manually at set times during the day. While the number of net tweets is reduced, due to the huge volume of the source material (people using #IndiAves) the curation aspect of the account is significantly reduced.
